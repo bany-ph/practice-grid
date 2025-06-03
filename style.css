@@ -7,6 +7,10 @@ body{
    min-height: 100vh;
 }
 
+.content{
+    display: flex;
+
+}
 
 .container{
   
@@ -20,7 +24,7 @@ body{
 
 .items{
     border-radius: 5px;
-    
+    height: 10rem;
 }
 
 .one{
@@ -57,3 +61,22 @@ body{
 
 
 
+
+@media screen and (max-width: 728px ) {
+
+        .content{
+            flex-direction: column;
+           
+        }
+
+        /* grid */
+        .container{
+            grid-template-columns: 1fr;
+            
+        }
+        .items{
+            grid-column:    1;
+        }
+
+       
+}
